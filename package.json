@@ -1,20 +1,25 @@
 {
-    "author": "Yarin Podoler",
-    "name": "express-session-context",
-    "description": "",
-    "version": "0.1.0",
-    "repository": {
-        "type" : "git",
-        "url": "git@github.com:startappdev/express-session-context.git"
-    },
-    "main": "./lib/express-session-context",
-    "keywords": [
-    ],
-    "bin": {
-        "uppercaseme": "./bin/express-session-context"
-    },
-    "dependencies": {},
-    "engines": {
-        "node": "*"
-    }
+  "author": "Yarin Podoler",
+  "name": "express-session-context",
+  "description": "",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:startappdev/express-session-context.git"
+  },
+  "main": "./lib/express-session-context",
+  "keywords": [],
+  "bin": {
+    "uppercaseme": "./bin/express-session-context"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test": "jasmine-node --verbose test/"
+  },
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
 }
