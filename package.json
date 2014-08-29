@@ -12,7 +12,9 @@
   "bin": {
     "uppercaseme": "./bin/express-session-context"
   },
-  "dependencies": {},
+  "dependencies": {
+    "q": "^1.0.1"
+  },
   "engines": {
     "node": "*"
   },
