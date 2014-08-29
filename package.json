@@ -1,11 +1,11 @@
 {
   "author": "Yarin Podoler",
-  "name": "express-session-context",
+  "name": "express-context",
   "description": "",
   "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "git@github.com:startappdev/express-session-context.git"
+    "url": "git@github.com:startappdev/express-context.git"
   },
   "main": "./lib/express-session-context",
   "keywords": [],
