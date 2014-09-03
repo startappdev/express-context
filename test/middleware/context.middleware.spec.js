@@ -11,7 +11,7 @@ describe('Unit Test Context MiddleWare', function(){
     });
 
     it ('Should successfully add context manipulator for namespaces', function(){
-        uniqueId1 = expressContext.addContextManipulator(function(contextManipulator, req, next){
+        uniqueId1 = expressContext.addContextManipulator(function(contextManipulator, next){
             contextManipulator.addData({
                 UNIQUE1 : 'UNIQUE1'
             });
@@ -19,7 +19,7 @@ describe('Unit Test Context MiddleWare', function(){
             next();
         });
 
-        uniqueId2 = expressContext.addContextManipulator(function(contextManipulator, req, next){
+        uniqueId2 = expressContext.addContextManipulator(function(contextManipulator, next){
             contextManipulator.addData({
                 UNIQUE2 : 'UNIQUE2'
             });
@@ -27,7 +27,7 @@ describe('Unit Test Context MiddleWare', function(){
             next();
         });
 
-        expressContext.addContextManipulator(function(contextManipulator, req, next){
+        expressContext.addContextManipulator(function(contextManipulator, next){
             contextManipulator.addGlobal('test', {
                 GLOBAL : 'GLOBAL'
             });
@@ -67,6 +67,23 @@ describe('Unit Test Context MiddleWare', function(){
                 GLOBAL : 'GLOBAL'
             });
 
+            done();
+        });
+    });
+
+    it ('should successfully get Request from the ContextManipulator', function(done){
+        var req = {
+            TEST : 'TEST'
+        };
+
+        expressContext.addContextManipulator(function(contextManipulator, next){
+            expect(typeof contextManipulator.getRequest).toEqual('function');
+            expect(contextManipulator.getRequest().TEST).toEqual('TEST');
+
+            next();
+        });
+
+        expressContext.sessionContext(req, {}, function(){
             done();
         });
     });
