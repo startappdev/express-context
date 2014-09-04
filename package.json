@@ -10,7 +10,7 @@
   "main": "./lib/express-session-context",
   "keywords": [],
   "bin": {
-    "uppercaseme": "./bin/express-session-context"
+    "uppercaseme": "./bin/express-context"
   },
   "dependencies": {
     "q": "^1.0.1"
