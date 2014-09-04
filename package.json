@@ -7,7 +7,7 @@
     "type": "git",
     "url": "git@github.com:startappdev/express-context.git"
   },
-  "main": "./lib/express-context.js",
+  "main": "./lib/index.js",
   "keywords": [],
   "bin": {
     "uppercaseme": "./bin/express-context"

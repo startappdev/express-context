@@ -1,7 +1,7 @@
 'use strict';
 
 describe('Unit Test Context MiddleWare', function(){
-    var expressContext = require('../../lib/express.context');
+    var expressContext = require('../../lib/index');
 
     var uniqueId1, uniqueId2;
 
