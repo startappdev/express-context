@@ -10,7 +10,7 @@
   "main": "./lib/index.js",
   "keywords": [],
   "bin": {
-    "uppercaseme": "./bin/express-context"
+    "express-context": "./bin/express-context"
   },
   "dependencies": {
     "q": "^1.0.1"
