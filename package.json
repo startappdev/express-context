@@ -1,0 +1,27 @@
+{
+  "author": "Yarin Podoler",
+  "name": "express-context",
+  "description": "",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:startappdev/express-context.git"
+  },
+  "main": "./lib/index.js",
+  "keywords": [],
+  "bin": {
+    "express-context": "./bin/express-context"
+  },
+  "dependencies": {
+    "q": "^1.0.1"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test": "jasmine-node --verbose test/"
+  },
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
